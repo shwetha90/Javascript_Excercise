@@ -1,0 +1,14 @@
+var arr=[10,20,30,40];//declaring array
+var a=prompt("enter numbr of elements u want to dply","enter the number");//taking input from the user
+if(a<=0 || a>arr.length)//checking for the array index
+{
+    alert("wrong input or you input is out of range");
+  }
+ 
+    else if(true)//used to print the output, if the input is within the bound
+    {
+      for(i=0;i<a;i++)// this loop is used to print specified number of elements
+        {
+     alert("the array elements are"+ arr[i]); 
+        }
+    }

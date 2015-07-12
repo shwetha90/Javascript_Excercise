@@ -1,0 +1,3 @@
+var arr=[1,2,3,4]
+alert("sum of the array element : " + eval(arr.join('+'))); //used to add + as delimitor for each number, and eval used to add these elements
+alert("product of the array element : " + eval(arr.join('*'))); //used to add * as delimitor for each number, and eval used to multiply these elements

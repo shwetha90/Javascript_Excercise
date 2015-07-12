@@ -1,0 +1,16 @@
+var arr2=[" ","Blue","Green", "Red", "Orange"];
+function ordinal_suffix_of(i) {
+    var j = i % 10;
+       var k = i % 100;
+    if (j == 1 && k != 11) {
+        return (i + " st " + " choice is "+ arr2[1]);
+    }
+    if (j == 2 && k != 12) {
+        return (i + "nd " + " choice is "+ arr2[2]);
+    }
+    if (j == 3 && k != 13) {
+        return (i + " rd choice is " + arr2[3]);
+    }
+    return i + "th choice is " + arr2[4];
+}
+alert(ordinal_suffix_of(prompt()));

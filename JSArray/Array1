@@ -1,0 +1,6 @@
+var x=[1];
+if(x.length<=1){
+  alert("false");
+ }else{
+   alert("true");
+ }

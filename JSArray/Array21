@@ -1,0 +1,16 @@
+function flatten(x) 
+{
+  if (x.length == 0) //checks whether the array is empty
+  {
+    return []
+  };
+  if (Array.isArray(x[0]))// checks whether array is having more than 1 elements
+  {
+    return flatten(x[0].concat(flatten(x.slice(1,x.length))));// The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+  }
+ return [].concat([x[0]], flatten(x.slice(1,x.length)));
+}alert(flatten([[[[[0]], [1]], [[[2], [3]]], [[4], [5]]]]));
+
+
+
+

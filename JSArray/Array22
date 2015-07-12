@@ -1,0 +1,18 @@
+var arr1 = [10,2,2,1,4,8,5,6,4,4];
+var arr2=[1,10,100,101];
+
+function squash(arr)
+{
+var tmp=[];
+    for(var i=0;i<arr1.length;i++)//checking arr1 elements
+    {
+      for(var j=0;j<arr2.length;j++)//checking arr2 elements
+        {
+          if(tmp.indexOf(arr2[i]) == -1) //checking the duplicates for arr1 and arr2, if there are any duplicates it eleminates and prints only 1 time
+          tmp.push(arr2[i]);
+        }
+      if(tmp.indexOf(arr1[i]) == -1)
+          tmp.push(arr1[i]);
+    }
+    return tmp;// returns the tmp[]
+}alert(squash(arr));

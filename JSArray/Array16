@@ -1,0 +1,17 @@
+var arr = [2, 11, 37, 42];
+alert(shuffle(arr));
+
+
+
+function shuffle(arra1) {
+    var ctr = arra1.length;
+    var temp, index;
+    while (ctr > 0) {//to check whether there are elements in array
+    index = Math.floor(Math.random() * ctr);// to take random index
+    ctr--; //decrease ctr by 1
+     temp = arra1[ctr];//swaping
+        arra1[ctr] = arra1[index];
+        arra1[index] = temp;
+    }
+    return arra1;
+}

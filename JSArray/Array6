@@ -1,0 +1,15 @@
+var num1=prompt();//used to recieve input from the user
+var result=[num1[0]]; //used to store the first element to array
+    
+for(var x=1; x<num1.length; x++)
+  {  
+    if((num1[x-1]%2 === 0)&&(num1[x]%2 === 0)) ////to check the even numbers
+     {  
+      result.push('-', num1[x]); //to add '-'between even numbers
+     }  
+    else  
+     {  
+      result.push(num1[x]);  
+     }  
+  }  
+alert(result.join(''));//used to print the final output

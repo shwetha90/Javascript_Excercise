@@ -1,0 +1,19 @@
+
+var arr = [10,2,2,1,4,8,5,6,4,4];
+
+function squash(arr){
+       
+    var tmp = [];//declaring tmp[] to store unique elements
+    for(var i = 0; i < arr.length; i++)
+    {
+        if(tmp.indexOf(arr[i]) == -1) //it checks the elements in tmp[], if (arr[i]==-1) fails means the elements in not present in tmp[] 
+                                        //so it pushes the element into tmp[], if true means elements is
+                                       //already present in tmp[] so it checks for the next elements
+        {
+        tmp.push(arr[i]);
+         
+        }
+    }
+    return tmp;// returns the tmp[]
+}alert(squash(arr));
+

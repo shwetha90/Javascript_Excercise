@@ -1,0 +1,10 @@
+function sortNumber(a,b)
+{
+return a-b;//a negative value, meaning a is before b
+           //a positive value, b is before a
+}
+
+
+
+var arr1 =[9,52,0,5,7,4,6,-1,-8];
+alert(arr1.sort(sortNumber));//used to sort the numbers

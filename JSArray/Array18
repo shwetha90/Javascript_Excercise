@@ -1,0 +1,24 @@
+var arr1=[1,2,4];
+var arr2=[2,4,5,6];
+var index=0,x;
+var arr=[];
+while (index < arr1.length && index < arr2.length) //checking both the array elements, if the both conditions are true adds both the elements of particular index and pushes it to the arr[]
+  {
+    arr.push(arr1[index] + arr2[index]);
+    index++;
+  }
+if (index === arr1.length)
+ {
+    for (x = index; x < arr2.length; x++)   {// index is last position of arr1, id arr2 length is greater than arr1 then that extra element will  be pushed as it is to arr[]
+      arr.push(arr2[x]);
+    }
+  } 
+  else
+  {
+  for (x = index; x < arr1.length; x++) // index is last position of arr2, id arr1 length is greater than arr2 then that extra element will  be pushed as it is to arr[]     
+    {
+      arr.push(arr1[x]);
+    }
+  }
+alert("Addition of two arrays: " + arr);
+

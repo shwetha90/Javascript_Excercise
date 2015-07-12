@@ -1,0 +1,2 @@
+var arr=["red","yellow","blue","green"];//declaring array
+alert(arr.toString());//toString() is used to display all the elements in a single line

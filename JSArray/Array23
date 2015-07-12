@@ -1,0 +1,13 @@
+function arr_diff(a1, a2)
+{
+  var a=[], diff=[];//declaration of array which holds 2 array, and declaring diff[]
+  for(var i=0;i<a1.length;i++)//checking a1 array elements
+    a[a1[i]]=true;
+  for(var i=0;i<a2.length;i++)//checking a2 array elements
+    if(a[a2[i]]) delete a[a2[i]];//if elements are same in both the array then that element will be deleted
+    else a[a2[i]]=true;
+  for(var k in a)//unique elements will be stored in k
+    diff.push(k);//pushing k elements to diff[]
+  return diff;
+}alert(arr_diff([1,2,3],[1,2,4,5]))
+

@@ -1,0 +1,5 @@
+var a=[1,2,8,3,4];//declaring values to array a
+var b=a;//assigning array A to B
+b.push("hi");//adding new element to array b and it will reflect to both the array
+alert("A array contains"+ a);//displying a values
+alert("B array contains"+ b);//displaying b values
